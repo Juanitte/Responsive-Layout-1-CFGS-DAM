@@ -1,0 +1,494 @@
+body{
+    margin: 0;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 15vw 85vw;
+    grid-template-areas:"burger logo"
+                        "buttons buttons"
+                        "panel1 panel1"
+                        "panel2 panel2"
+                        "panel3 panel3"
+                        "panel4 panel4";
+}
+.burger{
+    grid-area: burger;
+}
+.logo{
+    grid-area: logo;
+    justify-self: center;
+    
+}
+.buttons{
+    grid-area: buttons;
+    justify-self: center;
+    width: 90vw;
+    margin-top: 20px;
+}
+.panel1{
+    grid-area: panel1;
+    justify-self: center;
+    margin-top: 20px;
+}
+.panel2{
+    grid-area: panel2;
+    justify-self: center;
+    margin-top: 20px;
+}
+.panel3{
+    grid-area: panel3;
+    justify-self: center;
+    margin-top: 20px;
+}
+.panel4{
+    grid-area: panel4;
+    justify-self: center;
+    margin-top: 20px;
+}
+.burger a{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+    border-bottom: 2px solid grey;
+    max-width: 200px;
+    background: lightgrey;
+    font-variant: small-caps;
+    text-align: start;
+    width: 30vw;
+    font-weight: bold;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.burger input[type="checkbox"], .burger .fa-bars, .burger .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+}
+  
+.burger .fa-bars, .burger .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+}
+  
+.burger input[type="checkbox"] {
+    opacity: 0;
+}
+  
+.burger {
+    color: black;
+    position: relative;
+    background: white;
+    min-height: 48px;
+}
+  
+.burger nav {
+    display: none;
+}
+  
+.burger input:checked ~ nav {
+    display: block;
+}
+  
+.burger input:checked ~ .fa-bars {
+    display: none;
+}
+  
+.burger input:not(:checked) ~ .fa-times {
+    display: none;
+}
+
+.burger ul{
+    list-style-type: none;
+}
+
+#buttonsdiv{
+    width: 80vw;
+    background-color: #ededed;
+    border-radius: 6px;
+    padding: 10px 5vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#button1 {
+    background-color: #ef7a2a;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    grid-area: button1;
+}
+#button2 {
+    background-color: #efaa28;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    grid-area: button2;
+}
+#button3 {
+    background-color: #ebd619;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    grid-area: button3;
+}
+#button4 {
+    background-color: #8ac022;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    grid-area: button4;
+}
+#button5 {
+    background-color: #5f8e00;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    grid-area: button5;
+}
+
+.buttons button{
+    width: 80vw;
+}
+
+.number{
+    text-align: start;
+    font-size: 30px;
+}
+
+.buttontext{
+    text-align: end;
+    font-size: 18px;
+}
+
+#img1{
+    width: 80vw;
+    border-radius: 6px;
+    display: none;
+    grid-area: img1;
+}
+
+#img2{
+    width: 80vw;
+    border-radius: 6px;
+    display: none;
+    grid-area: img2;
+}
+
+#img3{
+    width: 80vw;
+    border-radius: 6px;
+    display: none;
+    grid-area: img3;
+}
+
+#img4{
+    width: 80vw;
+    border-radius: 6px;
+    display: none;
+    grid-area: img4;
+}
+
+#img5{
+    width: 80vw;
+    border-radius: 6px;
+    display: none;
+    grid-area: img5;
+}
+
+.panel1 div{
+    background-color: #ededed;
+    border-radius: 6px;
+    padding: 10px 5vw;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:"icon text"
+                        "description description";
+}
+
+.panel2 div{
+    background-color: #ededed;
+    border-radius: 6px;
+    padding: 10px 5vw;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:"icon text"
+                        "description description";
+}
+
+.panel3 div{
+    background-color: #ededed;
+    border-radius: 6px;
+    padding: 10px 5vw;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:"icon text"
+                        "description description";
+}
+
+.panel4 div{
+    background-color: #ededed;
+    border-radius: 6px;
+    padding: 10px 5vw;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:"icon text"
+                        "description description";
+}
+
+.icon{
+    grid-area: icon;
+    justify-self: center;
+}
+
+.text{
+    grid-area: text;
+}
+
+.description{
+    grid-area: description;
+}
+
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #565656;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+}
+
+.description{    
+    font-family: Arial, Helvetica, sans-serif;
+    color: #565656;
+    border-top: 2px solid #565656;
+    padding-top: 15px;
+}
+
+.panel4{
+    margin-bottom: 20px;
+}
+
+.buttonmenu{
+    display: none;
+}
+
+#menubutton1{
+    width: 9vw;
+    height: 60px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    background-color: transparent;
+}
+
+#menubutton2{
+    width: 10vw;
+    height: 60px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    background-color: transparent;
+}
+
+#menubutton3{
+    width: 10vw;
+    height: 60px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    background-color: transparent;
+}
+
+#menubutton4{
+    width: 10vw;
+    height: 60px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    background-color: transparent;
+}
+
+#menubutton5{
+    width: 9vw;
+    height: 60px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    background-color: transparent;
+}
+
+#button1:hover, #button2:hover, #button3:hover, #button4:hover, #button5:hover,
+#menubutton1:hover, #menubutton2:hover, #menubutton3:hover, #menubutton4:hover, #menubutton5:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 576px){
+
+    .wrapper{
+        grid-template-columns: 10vw 40vw 25vw 25vw;
+        grid-template-areas:"burger logo logo logo"
+                            "buttons buttons buttons buttons"
+                            "panel1 panel1 panel2 panel2"
+                            "panel3 panel3 panel4 panel4";
+    }
+
+    .panel1 div{
+        width: 35vw;
+    }
+
+    .panel2 div{
+        width: 35vw;
+    }
+
+    .panel3 div{
+        width: 35vw;
+    }
+
+    .panel4 div{
+        width: 35vw;
+    }
+
+}
+
+@media (min-width: 992px){
+
+    .wrapper{
+        grid-template-columns: 25vw 25vw 25vw 25vw;
+        grid-template-areas:"logo logo menu menu"
+                            "buttons buttons buttons buttons"
+                            "panel1 panel2 panel3 panel4";
+    }
+
+    .buttonmenu{
+        display: block;
+        grid-area: menu;
+        padding-top: 10px;
+        width: 50vw;
+    }
+
+    .burger{
+        display: none;
+    }
+
+    .panel1 div{
+        width: 20vw;
+        padding: 10px 1vw;
+    }
+
+    .panel2 div{
+        width: 20vw;
+        padding: 10px 1vw;
+    }
+
+    .panel3 div{
+        width: 20vw;
+        padding: 10px 1vw;
+    }
+
+    .panel4 div{
+        width: 20vw;
+        padding: 10px 1vw;
+    }
+
+    #buttonsdiv{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+    }
+
+    #button1, #button2, #button3, #button4, #button5{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 90% 10%;
+        grid-template-areas:"buttonstext"
+                            "number";
+    }
+    
+    .buttons button{
+        width: 3.7vw;
+        height: 39vw;
+    }
+    .buttons img{
+        width: 70vw;
+    }
+
+    #img3, #img4, #img5{
+        width: 57.5vw;
+    }
+
+    .number{
+        grid-area: number;
+        text-align: center;
+    }
+
+    .buttontext{
+        grid-area: buttonstext;
+        transform: rotate(-90deg);
+        align-self:center;
+        font-size: 26px;
+        width: 340px;
+    }
+}

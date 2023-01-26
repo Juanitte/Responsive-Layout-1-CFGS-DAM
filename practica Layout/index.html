@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="burger">
+            <input type="checkbox">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-times"></i>
+            <nav>
+                <br><br><br><br>
+                <a href="#">Home</a>
+                <a href="#">Investments</a>
+                <a href="#">Finance</a>
+                <a href="#">Support</a>
+                <a href="#">Clients</a>
+            </nav>
+        </div>
+        <div class="buttonmenu">
+            <button id="menubutton1" type="button">Home</button>
+            <button id="menubutton2" type="button">Investments</button>
+            <button id="menubutton3" type="button">Finance</button>
+            <button id="menubutton4" type="button">Support</button>
+            <button id="menubutton5" type="button">Clients</button>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logomovil.png"/>
+            </a>
+        </div>
+        <div class="buttons">
+            <div id="buttonsdiv">
+                <button id="button1" type="button" onclick="show1()"><div class="number">1</div><div class="buttontext">Welcome</div></button>
+                <img id="img1" src="img/img1.png"/>
+                <button id="button2" type="button" onclick="show2()"><div class="number">2</div><div class="buttontext">Investments</div></button>
+                <img id="img2" src="img/img2.png"/>
+                <button id="button3" type="button" onclick="show3()"><div class="number">3</div><div class="buttontext">Corporate finance</div></button>
+                <img id="img3" src="img/img3.png"/>
+                <button id="button4" type="button" onclick="show4()"><div class="number">4</div><div class="buttontext">New markets</div></button>
+                <img id="img4" src="img/img4.png"/>
+                <button id="button5" type="button" onclick="show5()"><div class="number">5</div><div class="buttontext">Financing technology</div></button>
+                <img id="img5" src="img/img5.png"/>
+                
+            </div>
+        </div>
+        <div class="panel1">
+            <div>
+                <img class="icon" src="img/icon1.png"/>
+                <p class="text">Solutions</p>
+                <p class="description">Bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla</p>
+            </div>
+        </div>
+        <div class="panel2">
+            <div>
+                <img class="icon" src="img/icon2.png"/>
+                <p class="text">Investments</p>
+                <p class="description">Bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla</p>
+            </div>
+        </div>
+        <div class="panel3">
+            <div>
+                <img class="icon" src="img/icon3.png"/>
+                <p class="text">Financing</p>
+                <p class="description">Bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla</p>
+            </div>
+        </div>
+        <div class="panel4">
+            <div>
+                <img class="icon" src="img/icon4.png"/>
+                <p class="text">Marketing</p>
+                <p class="description">Bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function show1(){
+            if (document.getElementById('img1').style.display == "block") {
+                document.getElementById('img1')
+                .style.display = "none";
+            }else{
+                document.getElementById('img1')
+                .style.display = "block";
+            }
+
+            document.getElementById('img2')
+            .style.display = "none";
+
+            document.getElementById('img3')
+            .style.display = "none";
+
+            document.getElementById('img4')
+            .style.display = "none";
+
+            document.getElementById('img5')
+            .style.display = "none";
+        }
+
+        function show2(){
+            if (document.getElementById('img2').style.display == "block") {
+                document.getElementById('img2')
+                .style.display = "none";
+            }else{
+                document.getElementById('img2')
+                .style.display = "block";
+            }
+
+            document.getElementById('img1')
+            .style.display = "none";
+
+            document.getElementById('img3')
+            .style.display = "none";
+
+            document.getElementById('img4')
+            .style.display = "none";
+
+            document.getElementById('img5')
+            .style.display = "none";
+        }
+
+        function show3(){
+            if (document.getElementById('img3').style.display == "block") {
+                document.getElementById('img3')
+                .style.display = "none";
+            }else{
+                document.getElementById('img3')
+                .style.display = "block";
+            }
+
+            document.getElementById('img2')
+            .style.display = "none";
+
+            document.getElementById('img1')
+            .style.display = "none";
+
+            document.getElementById('img4')
+            .style.display = "none";
+
+            document.getElementById('img5')
+            .style.display = "none";
+        }
+
+        function show4(){
+            if (document.getElementById('img4').style.display == "block") {
+                document.getElementById('img4')
+                .style.display = "none";
+            }else{
+                document.getElementById('img4')
+                .style.display = "block";
+            }
+
+            document.getElementById('img2')
+            .style.display = "none";
+
+            document.getElementById('img3')
+            .style.display = "none";
+
+            document.getElementById('img1')
+            .style.display = "none";
+
+            document.getElementById('img5')
+            .style.display = "none";
+        }
+
+        function show5(){
+            if (document.getElementById('img5').style.display == "block") {
+                document.getElementById('img5')
+                .style.display = "none";
+            }else{
+                document.getElementById('img5')
+                .style.display = "block";
+            }
+
+            document.getElementById('img2')
+            .style.display = "none";
+
+            document.getElementById('img3')
+            .style.display = "none";
+
+            document.getElementById('img4')
+            .style.display = "none";
+
+            document.getElementById('img1')
+            .style.display = "none";
+        }
+    </script>
+</body>
+</html>
